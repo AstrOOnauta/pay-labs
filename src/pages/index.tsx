@@ -1,5 +1,6 @@
 import { Flex } from '@chakra-ui/react'
 import type { NextPage } from 'next'
+import About from '../components/About'
 import Hero from '../components/Hero'
 
 const Home: NextPage = () => {
@@ -11,8 +12,10 @@ const Home: NextPage = () => {
       color="grey.600"
       fontFamily="lato"
       fontWeight="normal"
+      flexDirection="column"
     >
       <Hero />
+      <About />
     </Flex>
   )
 }
