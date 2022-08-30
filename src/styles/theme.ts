@@ -9,6 +9,19 @@ const theme = extendTheme({
         '&::-webkit-font-smoothing': 'antialiased',
         '&::-moz-osx-font-smoothing': 'grayscale',
       },
+      '&::-webkit-scrollbar': {
+        width: '12px',
+      },
+      '&::-webkit-scrollbar-track': {
+        background: '#641EB4',
+      },
+      '&::-webkit-scrollbar-thumb': {
+        background: '#0096BE',
+        borderRadius: '24px',
+      },
+      '&::-webkit-scrollbar-thumb:hover': {
+        background: '#00AACF',
+      },
     },
   },
   fonts: {
