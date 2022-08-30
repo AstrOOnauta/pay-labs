@@ -1,5 +1,6 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 import type { NextPage } from 'next'
+import Hero from '../components/Hero'
 
 const Home: NextPage = () => {
   return (
@@ -10,10 +11,8 @@ const Home: NextPage = () => {
       color="grey.600"
       fontFamily="lato"
       fontWeight="normal"
-      justifyContent="center"
-      alignItems="center"
     >
-      <Text>Pay Labs</Text>
+      <Hero />
     </Flex>
   )
 }
