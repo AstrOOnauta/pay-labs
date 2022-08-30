@@ -1,6 +1,7 @@
 import { Flex } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import About from '../components/About'
+import Contact from '../components/Contact'
 import Hero from '../components/Hero'
 
 const Home: NextPage = () => {
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
     >
       <Hero />
       <About />
+      <Contact />
     </Flex>
   )
 }

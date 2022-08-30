@@ -24,11 +24,13 @@ export default function Hero() {
         justifyContent={isLargerThan1080 ? 'space-between' : 'center'}
         height="100%"
         flexWrap={isLargerThan1080 ? 'nowrap' : 'wrap'}
-        marginTop={isLargerThan720 ? '10px' : '20px'}
+        marginTop={
+          isLargerThan1080 ? '10px' : isLargerThan720 ? '100px' : '20px'
+        }
       >
         <Flex
           flexDirection="column"
-          width={isLargerThan1420 ? '492px' : isLargerThan720 ? '362px' : ''}
+          width={isLargerThan1420 ? '492px' : isLargerThan1080 ? '362px' : ''}
           justifyContent="center"
           alignItems={isLargerThan1080 ? 'flex-start' : 'center'}
         >
